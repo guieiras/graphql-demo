@@ -6,3 +6,12 @@
   width: calc(100% - 430px);
   padding: 10px;
 }
+
+.Requests > table {
+  border: 1px solid black;
+}
+
+.Requests th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
