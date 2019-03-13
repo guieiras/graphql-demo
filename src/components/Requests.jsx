@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Requests.css';
+import { observer } from 'mobx-react';
 
-export class Requests extends Component {
+export default observer(class Requests extends Component {
   render() {
     return (
       <div className="Requests">
@@ -10,11 +11,19 @@ export class Requests extends Component {
           <thead>
             <tr>
               <th>Caminho</th>
-              <th>Tamanho em KB</th>
+              <th>Tamanho em bytes</th>
             </tr>
           </thead>
+          <tbody>
+            {
+              this.props.requests.map((response) => <tr>
+                <td>{response.url}</td>
+                <td>{response.size}</td>
+              </tr>)
+            }
+          </tbody>
         </table>
       </div>
     );
   }
-}
+});
