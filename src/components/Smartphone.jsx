@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Smartphone.css';
+import MobileApp from './MobileApp';
 
 export default class Smartphone extends Component {
 
@@ -8,6 +9,7 @@ export default class Smartphone extends Component {
       <div className="Smartphone">
         <div className="mockup">
           <div className="screen">
+            <MobileApp request={this.props.request} />
           </div>
         </div>
       </div>

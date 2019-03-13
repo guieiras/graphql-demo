@@ -15,7 +15,7 @@ export default class DemoApp extends Component {
   render() {
     return (
       <div className="DemoApp">
-        <Smartphone fetcher={this.fetcher} />
+        <Smartphone request={this.props.requester(this.fetcher)} />
         <Requests requests={this.state.requests} />
       </div>
     );

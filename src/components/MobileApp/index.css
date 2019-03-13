@@ -1,0 +1,22 @@
+.MobileApp > .navbar {
+  background-color: #eee;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.MobileApp > .repository {
+  background-color: #ffffff;
+  padding: 6px;
+  border-bottom: 1px solid #888;
+}
+
+.MobileApp > .repository > .name {
+  font-weight: bold;
+}
+
+.MobileApp > .repository > .prs, .MobileApp > .repository > .commits {
+  color: #aaaaaa;
+  float: right;
+  margin-left: 8px;
+}
