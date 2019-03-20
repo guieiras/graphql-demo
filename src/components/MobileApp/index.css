@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 
-.MobileApp > .repository > .prs, .MobileApp > .repository > .commits {
+.MobileApp > .repository > .prs, .MobileApp > .repository > .collaborators {
   color: #aaaaaa;
   float: right;
   margin-left: 8px;
